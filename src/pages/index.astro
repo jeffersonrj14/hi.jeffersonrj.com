@@ -31,8 +31,8 @@ const posts = (await getCollection('posts')).sort(function (first, second) {
 
     <article class='mb-8 flex flex-col gap-8'>
       <header class='flex w-full flex-row justify-between gap-2'>
-        <h3 class='text-lg text-neutral-100'>Personal Tools</h3>
-        <p class='mt-2 text-gray-300'>Tools that I might needed time to time</p>
+        <h3 class='text-lg text-neutral-100'>Utils/Tools</h3>
+        <p class='mt-0.5 text-gray-300'>Tools that I might needed time to time</p>
       </header>
       <section class='flex flex-col gap-4 md:flex-row md:flex-wrap'>
         {tools.map((tool) => <Card {...tool} />)}
