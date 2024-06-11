@@ -20,38 +20,5 @@ import '../styles/post.css'
     <div class='text-center'>
       <Footer />
     </div>
-  </body><!-- ---
-import SEOMain from '../SEOMain'
-import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
-import { SEO, type Props as SEOProps } from 'astro-seo'
-import type { PartialDeep } from 'type-fest'
-import { Head } from 'astro-capo'
-
-export interface Props {
-  seo?: PartialDeep<SEOProps>
-}
-
-const { seo } = Astro.props
-
-const webSEO = Object.assign(SEOMain, seo ?? { title: null })
----
-
-<!doctype html>
-<html lang='en'>
-  <Head>
-    <meta charset='UTF-8' />
-    <meta name='viewport' content='width=device-width, initial-scale=1' />
-    <link rel='sitemap' href='/sitemap-index.xml' />
-    <link rel='icon' href='/author.png' />
-    <SEO {...webSEO} />
-  </Head>
-  <body class='mx-auto bg-jefferson-dark'>
-    <Header />
-    <slot />
-    <div class='text-center'>
-      <Footer />
-    </div>
   </body>
-</html> -->
 </html>
