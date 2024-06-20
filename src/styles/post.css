@@ -7,7 +7,7 @@
 }
 
 .post h2 {
-  @apply mt-4 text-3xl text-jefferson-light underline underline-offset-4;
+  @apply mt-4 text-3xl text-jefferson-light underline decoration-gray-500 decoration-2 underline-offset-4;
 }
 
 .post h3 {

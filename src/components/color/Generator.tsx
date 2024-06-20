@@ -58,7 +58,7 @@ export const ColorGenerator = () => {
     // </div>
     <div class='flex flex-wrap justify-center gap-4'>
       {colors().map((color, index) => (
-        <div class='flex flex-col items-center rounded-md border bg-white px-2 py-2 text-jefferson-dark'>
+        <div class='flex flex-col items-center rounded-md border bg-white/80 px-2 py-2 text-jefferson-dark'>
           <div style={{ background: color, width: '100px', height: '100px' }}></div>
           <div class='mt-2 flex h-8 w-24 items-center justify-center rounded bg-gray-200'>
             <p>{color}</p>
