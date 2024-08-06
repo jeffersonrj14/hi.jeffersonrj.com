@@ -2,15 +2,16 @@ import { createSignal } from 'solid-js'
 import { HexColorPicker } from 'solid-colorful'
 
 export const ColorPicker = () => {
-  const [color, setColor] = createSignal('#13c4a5')
-  const [input, setInput] = createSignal('#13c4a5')
+  const [color, setColor] = createSignal('#13c4a5');
+  const [input, setInput] = createSignal('#13c4a5');
 
-  const handleInputChange = (e) => {
-    setInput(e.target.value)
-    if (e.target.value.startsWith('#') || e.target.value.startsWith('hsl')) {
-      setColor(e.target.value)
+  const handleInputChange = (e: Event) => {
+    const target = e.target as HTMLInputElement;
+    setInput(target.value);
+    if (target.value.startsWith('#') || target.value.startsWith('hsl')) {
+      setColor(target.value);
     }
-  }
+  };
 
   return (
     <div>
