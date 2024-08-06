@@ -1,0 +1,21 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { ColorPicker } from '../../components/color/ColorPicker'
+---
+
+<DefaultLayout title='Color Picker'>
+  <main class='mx-auto my-8 max-w-[872px] px-4 text-stone-300 md:px-0'>
+    <a href='/' class='font-light text-gray-300'> &larr; Back to tools list</a>
+
+    <h1 class='mt-2 text-4xl font-semibold text-jefferson-light'>Color Picker & Check</h1>
+    <h1 class='mt-2 text-xl font-semibold text-gray-400'>Find your suitable color and check what color</h1>
+
+    <hr class='my-8 h-1 rounded border-0 bg-gray-700' />
+
+    <noscript>
+      Color Picker are being generated client-side, you need to enable JavaScript to use this page.
+    </noscript>
+
+    <ColorPicker client:only='solid-js' />
+  </main>
+</DefaultLayout>
