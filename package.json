@@ -20,7 +20,6 @@
     "@astrojs/cloudflare": "^10.4.2",
     "@astrojs/node": "^8.3.2",
     "sharp": "^0.33.4",
-    "solid-colorful": "^0.0.2",
     "solid-js": "^1.8.19"
   },
   "devDependencies": {
