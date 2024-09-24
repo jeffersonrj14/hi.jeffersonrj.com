@@ -1,0 +1,66 @@
+---
+import { getCollection } from 'astro:content'
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+import Link from '../components/shared/Link.astro'
+import Card from '../components/Card.astro'
+import PostCard from '../components/PostCard.astro'
+
+const tools = [
+  {
+    url: '/tools/color',
+    title: 'Color generator',
+    description: 'Keep generating until you find what you like.'
+  },
+  {
+    url: '/tools/jobsearch',
+    title: 'Job Search',
+    description: 'Utilizing Google Search Operators'
+  }
+]
+
+const posts = (await getCollection('posts')).sort(function (first, second) {
+  return second.data.publishedAt.getTime() - first.data.publishedAt.getTime()
+})
+---
+
+<DefaultLayout title='Home'>
+  <main class='mx-auto my-8 max-w-3xl px-4 md:px-0'>
+    <h1 class='text-4xl font-semibold text-jefferson-light'>Utils/Tools</h1>
+
+    <hr class='my-8 h-1 rounded border-0 bg-gray-700' />
+
+    <article class='mb-8 flex flex-col gap-8'>
+      <header class='flex w-full flex-row justify-between gap-2'>
+        <h3 class='text-lg text-neutral-100'>Utils/Tools that I might needed</h3>
+        <p class='mt-0.5 text-gray-300'></p>
+      </header>
+      <section class='flex flex-col gap-4 md:flex-row md:flex-wrap'>
+        {tools.map((tool) => <Card {...tool} />)}
+      </section>
+    </article>
+    <article class='flex flex-col gap-8'>
+      <header class='flex w-full flex-row justify-between gap-2'>
+        <h3 class='text-lg text-neutral-100'>Latest posts</h3>
+
+        <Link href='/posts' label='See all posts' isUnderline target='_self' />
+      </header>
+      {posts.length === 0 && <p class="text-jefferson-light">Posts have moved to my personal website 👀...</p>}
+
+      <section class='flex flex-col gap-4 md:flex-row md:flex-wrap'>
+        {
+          posts.length !== 0 &&
+            posts
+              .slice(0, 2)
+              .map((post) => (
+                <PostCard
+                  publishedAt={post.data.publishedAt}
+                  title={post.data.title}
+                  description={post.data.description}
+                  slug={post.slug}
+                />
+              ))
+        }
+      </section>
+    </article>
+  </main>
+</DefaultLayout>

@@ -1,0 +1,45 @@
+.post p {
+  @apply leading-7;
+}
+
+.post code {
+  @apply rounded-sm bg-neutral-800 px-1 py-[2px] text-orange-500;
+}
+
+.post h2 {
+  @apply mt-4 text-3xl text-jefferson-light underline decoration-gray-500 decoration-2 underline-offset-4;
+}
+
+.post h3 {
+  @apply mt-2 text-2xl text-jefferson-light;
+}
+.post h4 {
+  @apply text-jefferson-light;
+}
+
+.post code {
+  @apply rounded-sm bg-neutral-800 px-1 py-[2px] text-jefferson-main;
+}
+
+.post a {
+  @apply text-jefferson-main hover:text-jefferson-light;
+}
+
+.post ul {
+  @apply list-disc p-4;
+}
+.post ol {
+  @apply list-decimal p-4;
+}
+
+.post blockquote {
+  @apply flex flex-row gap-2 before:block before:h-auto before:w-1 before:max-w-[1px] before:bg-jefferson-maindark before:content-[''];
+}
+
+.post pre {
+  @apply p-4;
+}
+
+.post pre > code {
+  @apply bg-transparent;
+}

@@ -1,0 +1,24 @@
+---
+import Header from '../components/shared/Header.astro'
+import Footer from '../components/shared/Footer.astro'
+import SEOTags from '../components/seo/SEOTags.astro'
+import type { HeadTags } from '../utils/types/HeadTags'
+
+export type Props = HeadTags
+const headTags = Astro.props
+
+import '../styles/tailwind.css'
+import '../styles/post.css'
+---
+
+<!doctype html>
+<html lang='en'>
+  <SEOTags {...headTags} />
+  <body class='mx-auto bg-jefferson-dark'>
+    <Header />
+    <slot />
+    <div class='text-center'>
+      <Footer />
+    </div>
+  </body>
+</html>
