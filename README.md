@@ -1,5 +1,5 @@
-# Utilities and Blog [Code Deprecated]
+# Utilities
 
-🌐 | RJ Jefferson's Utilities and Blog website
+🌐 | RJ Jefferson's Utilities
 
 > The Blog has been moved to my [Personal Website](https://jeffersonrj.com/posts)

@@ -10,8 +10,8 @@ const posts = (await getCollection('posts')).sort(function (first, second) {
 
 <DefaultLayout title='All Posts'>
   <main class='mx-auto my-8 max-w-3xl px-4 text-jefferson-light md:px-0'>
-    <h1 class='text-4xl font-semibold text-jefferson-light'>Posts</h1>
-    <p class='mt-2 text-gray-300'>All Posts / Personal Notes / Learning Progress</p>
+    <h1 class='text-4xl font-semibold text-jefferson-light'>Personal Notes / Snippets</h1>
+    <p class='mt-2 text-gray-300'>A place for me to store my notes and snippets.</p>
 
     <hr class='my-8 h-1 rounded border-0 bg-gray-700' />
     {posts.length === 0 && <p class="text-jefferson-light">Posts have moved to my personal website 👀...</p>}
