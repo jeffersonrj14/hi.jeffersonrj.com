@@ -211,11 +211,11 @@ Inline-style:
 [alt-text](directory file / links)
 EX:
     [Example 1](README.md)
-    ![Example 2 Image](https://assets.jeffersonrj.com/assets/other/pikachu.png)
+    ![Example 2 Image](https://assets.jeffersonrj.com/assets/pokemon/pikachu.png)
 ```
 [Example 1](README.md)
 
-![Example 2 Image](https://assets.jeffersonrj.com/assets/other/pikachu.png)
+![Example 2 Image](https://assets.jeffersonrj.com/assets/pokemon/pikachu.png)
 
 <div align = "center";>
 	
