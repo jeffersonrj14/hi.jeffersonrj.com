@@ -23,6 +23,16 @@ const pathname = removeTrailingSlash(Astro.url.pathname)
           }}>Home</a
         >
       </li>
+      <li>/</li>
+      <li>
+        <a
+          href='/posts'
+          class:list={{
+            ['hover:text-jefferson-main']: true,
+            ['text-jefferson-light']: pathname === '/posts'
+          }}>Notes</a
+        >
+      </li>
     </ul>
   </nav>
 </header>

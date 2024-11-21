@@ -1,3 +1,7 @@
+* {
+  @apply scroll-smooth
+}
+
 .post p {
   @apply leading-7;
 }

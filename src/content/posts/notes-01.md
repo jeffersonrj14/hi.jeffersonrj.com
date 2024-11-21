@@ -1,9 +1,10 @@
 ---
-title: 'Personal Notes 01: LaTeX Cheat Sheet'
+title: 'Personal Notes 01: LaTeX'
 publishedAt: 2024-11-19
 description: ''
 slug: 'personal-notes-01'
 isPublish: true
+lastUpdated: 2024-11-19
 ---
 
 # LaTeX Cheat Sheet

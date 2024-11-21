@@ -1,9 +1,10 @@
 ---
-title: 'Personal Notes 02: Markdown Cheat Sheet'
-publishedAt: 2024-11-19
+title: 'Personal Notes 02: Markdown'
+publishedAt: 2024-11-20
 description: ''
 slug: 'personal-notes-02'
 isPublish: true
+lastUpdated: 2024-11-20
 ---
 
 # How to write in Markdown
@@ -11,7 +12,7 @@ isPublish: true
 <h2>What is Markdown?</h2>
 <ol style="list-style-type: lower-latin;">
     <li>
-        Markdown is a ightweight markup language that is used to format plain text documents.
+        Markdown is a lightweight markup language that is used to format plain text documents.
     </li>
     <li>
         With the goal of providing a simple and human-readable way to format text that can be easily converted to HTML and other formats. Markdown is often used for writing documentation, readme files, and formatting text on the web.
@@ -67,7 +68,7 @@ isPublish: true
 ![<hr />][hr-style]<br />
 </div>
 
-<h2>Text Style</h2>
+<h2 id="text-style">Text Style</h2>
 
 ```markdown
     Italics → _underscore_ or *Asterisk*
@@ -89,7 +90,7 @@ Superscript → <sup>Superscript</sup>
 ![<hr />][hr-style]<br />
 </div>
 
-<h2>Lists</h2>
+<h2 id="lists">Lists</h2>
 
 Unordered List with  `-` , `*`, or `+`.
 
@@ -118,7 +119,7 @@ Ordered List with Numbers
 ![<hr />][hr-style]<br />
 </div>
 
-<h2>Nested Lists</h2>
+<h2 id="nested-lists">Nested Lists</h2>
 
 You can create a nested list by indenting one or more list items below another item.
 
@@ -145,7 +146,7 @@ If you want to add a nested list under list number, for example, `200. List`, yo
 ![<hr />][hr-style]<br />
 </div>
 
-<h2>Links</h2>
+<h2 id="links">Links</h2>
 
 ```markdown
 [I'm an inline-style link](https://www.google.com)
@@ -181,7 +182,7 @@ Some text to show that the reference links can follow later.
 
 [I'm a relative reference to a repository file](../blob/master/LICENSE)
 
-[I'm a relative reference to other repository file](/../../../../jeffersonfed/jeffersonfed/blob/main/README.md)
+[I'm a relative reference to other repository file](/../../../../jeffersonrj14/jeffersonrj14/blob/main/README.md)
 
 [You can use numbers for reference-style link definitions][1]
 
@@ -202,7 +203,7 @@ Some text to show that the reference links can follow later.
 ![<hr />][hr-style]<br />
 </div>
 
-<h2 id="relative-links">Relative Links and Images</h2>
+<h2 id="relative-links-and-images">Relative Links and Images</h2>
 You can define relative links and image paths in your rendered files to help readers navigate to other files in your repository.
 
 Inline-style: 
@@ -222,7 +223,7 @@ EX:
 ![<hr />][hr-style]<br />
 </div>
 
-<h2>Code and Syntax Highlighting</h2>
+<h2 id="code-and-syntax-highlighting">Code and Syntax Highlighting</h2>
 Code blocks are part of the Markdown, but syntax highlighting isn't.
 
 ```markdown
@@ -235,12 +236,12 @@ Blocks of code are either fenced by lines with three back-ticks ```, or are inde
 
 <pre>
 ```js
-var x = "jeffersonfed";
+var x = "jeffersonrj14";
 alert(x);
 ```
  
 ```python
-x = "jeffersonfed"
+x = "jeffersonrj14"
 print x
 ```
  
@@ -251,12 +252,12 @@ But let's throw in a <b>tag</b>.
 </pre>
 
 ```js
-var x = "jeffersonfed";
+var x = "jeffersonrj14";
 alert(x);
 ```
  
 ```python
-x = "jeffersonfed"
+x = "jeffersonrj14"
 print x
 ```
  
@@ -271,7 +272,7 @@ But let's throw in a <b>tag</b>.
 ![<hr />][hr-style]<br />
 </div>
 
-<h2>Blockquotes</h2>
+<h2 id="blockquotes">Blockquotes</h2>
 
 You can quote text with `>`
 
@@ -291,7 +292,7 @@ You can quote text with `>`
 ![<hr />][hr-style]<br />
 </div>
 
-<h2>Footnotes</h2>
+<h2 id="footnotes">Footnotes</h2>
 
 ```markdown
 Here is a simple footnote[^1].
@@ -326,7 +327,7 @@ You can also use words, to fit your writing style more closely[^note].
 ![<hr />][hr-style]<br />
 </div>
 
-<h2>Tables</h2>
+<h2 id="tables">Tables</h2>
 
 ```markdown
 Colons can be used to align columns.
@@ -451,7 +452,7 @@ This line is only separated by a single newline, so it's a separate line in the 
 ![<hr />][hr-style]<br />
 </div>
 
-<h2 id="embed">Embed Videos</h2>
+<h2 id="embed-videos">Embed Videos</h2>
 They can't be added directly but you can add an image with a link to the video like this:
 
 ```markdown
@@ -472,7 +473,7 @@ Playing around with markdown and html elements Reference
 </h2>
 
 
-<h2 id="drop-down">Drop down using Details Tag</h2>
+<h2 id="drop-down-using-details-tag">Drop down using Details Tag</h2>
 
 <details>
 <summary>
@@ -572,9 +573,9 @@ Playing around with markdown and html elements Reference
 I'm using [shield.io badge](https://shields.io) and this is the example
 
 ```markdown
-[![Custom Badge](https://img.shields.io/badge/Custom%20Badge-dfe6e9?&logoColor=dfe6e9)](https://github.com/jeffersonfed)
+[![Custom Badge](https://img.shields.io/badge/Custom%20Badge-dfe6e9?&logoColor=dfe6e9)](https://github.com/jeffersonrj14)
 ```
-[![Custom Badge](https://img.shields.io/badge/Custom%20Badge-dfe6e9?&logoColor=dfe6e9)](https://github.com/jeffersonfed)
+[![Custom Badge](https://img.shields.io/badge/Custom%20Badge-dfe6e9?&logoColor=dfe6e9)](https://github.com/jeffersonrj14)
 
 How to create it?
 
@@ -688,20 +689,20 @@ Message and color only, separated by a dash `-`, for example:
 <h2 id="logo-badge">Logo Badge</h2>
 
 ```markdown
-[![alt-text](https://img.shields.io/badge/any%20text-white?style=flat&logo=[logo name]&logoColor=#white)](https://ko-fi.com/jeffersonfed)
+[![alt-text](https://img.shields.io/badge/any%20text-white?style=flat&logo=[logo name]&logoColor=#white)](https://ko-fi.com/jeffersonrj14)
 
 
-[![Github](https://img.shields.io/badge/My%20Github-30363D?style=plastic&logo=GitHub&logoColor=#white)](https://github.com/jeffersonfed)
-[![Sponsor](https://img.shields.io/badge/Support%20Me-30363D?style=plastic&logo=GitHub-Sponsors&logoColor=#white)](https://ko-fi.com/jeffersonfed)
+[![Github](https://img.shields.io/badge/My%20Github-30363D?style=plastic&logo=GitHub&logoColor=#white)](https://github.com/jeffersonrj14)
+[![Sponsor](https://img.shields.io/badge/Support%20Me-30363D?style=plastic&logo=GitHub-Sponsors&logoColor=#white)](https://ko-fi.com/jeffersonrj14)
 ```
 
 - For example github logo and github sponsor logo:
 
 ```markdown
-[![Github](https://img.shields.io/badge/My%20Github-30363D?style=plastic&logo=GitHub&logoColor=#white)](https://github.com/jeffersonfed)
-[![Sponsor](https://img.shields.io/badge/Support%20Me-30363D?style=plastic&logo=GitHub-Sponsors&logoColor=#white)](https://ko-fi.com/jeffersonfed)
+[![Github](https://img.shields.io/badge/My%20Github-30363D?style=plastic&logo=GitHub&logoColor=#white)](https://github.com/jeffersonrj14)
+[![Sponsor](https://img.shields.io/badge/Support%20Me-30363D?style=plastic&logo=GitHub-Sponsors&logoColor=#white)](https://ko-fi.com/jeffersonrj14)
 ```
-[![Github](https://img.shields.io/badge/My%20Github-30363D?style=plastic&logo=GitHub&logoColor=#white)](https://github.com/jeffersonfed)
+[![Github](https://img.shields.io/badge/My%20Github-30363D?style=plastic&logo=GitHub&logoColor=#white)](https://github.com/jeffersonrj14)
 [![Sponsor](https://img.shields.io/badge/Support%20Me-30363D?style=plastic&logo=GitHub-Sponsors&logoColor=#white)](https://ko-fi.com/jeffersonrj14)
 
 <div align = "center";>

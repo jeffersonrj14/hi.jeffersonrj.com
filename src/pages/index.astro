@@ -57,6 +57,7 @@ const posts = (await getCollection('posts')).sort(function (first, second) {
                   title={post.data.title}
                   description={post.data.description}
                   slug={post.slug}
+                  lastUpdated={post.data.lastUpdated}
                 />
               ))
         }

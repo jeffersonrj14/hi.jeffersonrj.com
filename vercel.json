@@ -1,0 +1,20 @@
+{
+    "redirects": [
+      {
+        "source": "/notes",
+        "destination": "/posts",
+        "permanent": true
+      },
+      {
+        "source": "/blog",
+        "destination": "/posts",
+        "permanent": true
+      },
+      {
+        "source": "/source",
+        "destination": "https://github.com/jeffersonrj14/hi.jeffersonrj.com",
+        "permanent": true
+      }
+    ]
+  }
+  
