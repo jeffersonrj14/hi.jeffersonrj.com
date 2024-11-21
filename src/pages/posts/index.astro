@@ -14,7 +14,11 @@ const posts = (await getCollection('posts')).sort(function (first, second) {
     <p class='mt-2 text-gray-300'>A place for me to store my notes and snippets.</p>
 
     <hr class='my-8 h-1 rounded border-0 bg-gray-700' />
-    {posts.length === 0 && <p class="text-jefferson-light">Posts have moved to my personal website 👀...</p>}
+    {
+      posts.length === 0 && (
+        <p class='text-jefferson-light'>Posts have moved to my personal website 👀...</p>
+      )
+    }
 
     <article class='flex flex-col gap-4'>
       {

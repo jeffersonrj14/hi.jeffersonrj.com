@@ -8,6 +8,7 @@ lastUpdated: 2024-11-21
 ---
 
 ## VSCode
+
 - Delete the current line: `Ctrl + Shift+ K`
 - Select current line: `Ctrl + L`
 - Select current word: `Ctrl + D`
@@ -28,6 +29,7 @@ lastUpdated: 2024-11-21
 - Move Editor Tab: `Ctrl + Alt + Right Arrow/Left Arrow`
 
 ## Windows
+
 - Move window to the right half / left half: `Windows + Right Arrow/Left Arrow`
 - Switch to a specific window: `Alt + Tab`
 - Task View and select the desired window: `Windows + Tab`

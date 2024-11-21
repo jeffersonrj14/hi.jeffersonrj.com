@@ -4,19 +4,19 @@
 
 /* Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
 
-  .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
-  html::-webkit-scrollbar {
-    display: none;
-  }
+html::-webkit-scrollbar {
+  display: none;
+}
 
-  html {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

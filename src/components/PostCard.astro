@@ -43,8 +43,8 @@ const { title, publishedAt, description, slug, lastUpdated } = Astro.props
   <p class='truncate text-jefferson-light'>
     {description}
   </p>
-  <div class="pt-2">
-    <span class="text-jefferson-light">{formatDate(publishedAt)}</span>
-    <span class="block text-gray-400 text-md">Last Updated: {formatDate(lastUpdated)}</span>
+  <div class='pt-2'>
+    <span class='text-jefferson-light'>{formatDate(publishedAt)}</span>
+    <span class='text-md block text-gray-400'>Last Updated: {formatDate(lastUpdated)}</span>
   </div>
 </a>
