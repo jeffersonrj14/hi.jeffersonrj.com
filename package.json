@@ -17,7 +17,7 @@
     "format": "prettier . --write"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^10.4.2",
+    "@astrojs/cloudflare": "^11.2.0",
     "@astrojs/node": "^8.3.4",
     "sharp": "^0.33.5",
     "solid-js": "^1.9.3"

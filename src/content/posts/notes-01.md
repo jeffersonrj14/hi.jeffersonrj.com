@@ -1,14 +1,16 @@
 ---
-title: 'Personal Notes 01: LaTeX Cheat Sheet'
+title: 'Personal Notes 01: LaTeX'
 publishedAt: 2024-11-19
 description: ''
 slug: 'personal-notes-01'
 isPublish: true
+lastUpdated: 2024-11-19
 ---
 
 # LaTeX Cheat Sheet
 
 ## Basic Document Structure
+
 ```latex
 \documentclass{article}     % Document type
 \begin{document}            % Start of document
@@ -27,7 +29,9 @@ isPublish: true
 - Font Sizes: `\tiny`, `\scriptsize`, `\footnotesize`, `\normalsize`, `\large`, `\Large`, `\huge`, `\Huge`
 
 ## Lists
+
 ### Bullet Lists:
+
 ```latex
 \begin{itemize}
     \item First item
@@ -36,6 +40,7 @@ isPublish: true
 ```
 
 ### Numbered List:
+
 ```latex
 \begin{enumerate}
     \item First item
@@ -44,6 +49,7 @@ isPublish: true
 ```
 
 ## Sections and Headings
+
 ```latex
 \section{Section Title}
 \subsection{Subsection Title}
@@ -51,12 +57,15 @@ isPublish: true
 ```
 
 ## Mathematics
+
 ### Inline Math:
+
 ```latex
 This is inline math: \( E = mc^2 \)
 ```
 
 ### Display Math:
+
 ```latex
 \[
 E = mc^2
@@ -64,15 +73,18 @@ E = mc^2
 ```
 
 ### Greek Letters:
+
 - Lowercase: `\alpha`, `\beta`, `\gamma`, `\delta`, `\epsilon`, etc.
 - Uppercase: `\Gamma`, `\Delta`, `\Theta`, `\Lambda`, `\Sigma`, etc.
 
 ### Fractions:
+
 ```latex
 \frac{a}{b}   % Fraction
 ```
 
 ### Exponents and Subscripts:
+
 ```latex
 a^2          % Exponent
 a_i          % Subscript
@@ -80,12 +92,14 @@ a^{i+1}      % Exponent with expression
 ```
 
 ### Summation and Integrals:
+
 ```latex
 \sum_{i=1}^{n} i^2   % Summation
 \int_{0}^{\infty} x^2 \, dx  % Integral
 ```
 
 ### Matrices:
+
 ```latex
 \[
 \begin{pmatrix}
@@ -96,12 +110,14 @@ a^{i+1}      % Exponent with expression
 ```
 
 ### Roots:
+
 ```latex
 \sqrt{x}         % Square root
 \sqrt[n]{x}      % nth root
 ```
 
 ## Special Symbols
+
 - Pi: `\pi`
 - Infinity: `\infty`
 - Approximately: `\approx`
@@ -111,6 +127,7 @@ a^{i+1}      % Exponent with expression
 - Summation: `\sum`
 
 ## Aligning Equations
+
 ```latex
 \begin{align*}
     a &= b + c \\
@@ -119,6 +136,7 @@ a^{i+1}      % Exponent with expression
 ```
 
 ## Tables
+
 ```latex
 \begin{tabular}{|c|c|c|}
 \hline
@@ -131,7 +149,9 @@ A & B & C \\
 ```
 
 ## References and Citations
+
 ### Figures:
+
 ```latex
 \begin{figure}
     \centering
@@ -142,6 +162,7 @@ A & B & C \\
 ```
 
 ### Tables:
+
 ```latex
 \begin{table}
     \centering
@@ -159,27 +180,33 @@ A & B & C \\
 ```
 
 ### Cross-References:
+
 See Figure `\ref{fig:my_label}` for more information.
 
 ## Lists of References (Bibliography)
+
 ```latex
 \bibliographystyle{plain}
 \bibliography{references.bib}
 ```
 
 ## Including Graphics
+
 ```latex
 \usepackage{graphicx}
 \includegraphics[width=\textwidth]{image.png}
 ```
 
 ## Customizing Page Layout
+
 ### Margins:
+
 ```latex
 \usepackage[a4paper, left=1in, right=1in, top=1in, bottom=1in]{geometry}
 ```
 
 ### Header and Footer:
+
 ```latex
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -189,12 +216,14 @@ See Figure `\ref{fig:my_label}` for more information.
 ```
 
 ## Hyperlinks
+
 ```latex
 \usepackage{hyperref}
 \href{https://www.example.com}{Click Here}
 ```
 
 ## Including Code
+
 ```latex
 \usepackage{listings}
 \begin{lstlisting}

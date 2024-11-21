@@ -29,6 +29,9 @@ const { Content } = await post.render()
         {post.data.title} - {formatDate(post.data.publishedAt)}
       </h1>
       <p class='italic'>{post.data.description}</p>
+      <blockquote class='text-gray-400'>
+        Last Updated: {formatDate(post.data.lastUpdated)}
+      </blockquote>
     </header>
     <Content />
   </main>

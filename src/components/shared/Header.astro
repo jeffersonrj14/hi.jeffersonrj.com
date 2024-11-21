@@ -7,20 +7,31 @@ const pathname = removeTrailingSlash(Astro.url.pathname)
 <header
   class='z-40 mx-auto my-8 flex max-w-4xl flex-col gap-2 px-4 text-jefferson-light md:flex-row md:justify-between'
 >
-  <a href='/' class='text-lg'>
-    <span class='hover:text-jefferson-main'>Utils</span>
-    <span>・</span>
-    <span class='text-jefferson-main hover:text-jefferson-light'>RJJ</span>
-  </a>
+<div class="text-lg">
+  <span class="hover:text-jefferson-main transition-all duration-300">
+    Hi
+  </span>
+</div>
+
   <nav role='navigation'>
     <ul role='list' class='flex flex-row gap-2'>
       <li>
         <a
           href='/'
           class:list={{
-            ['hover:text-jefferson-main']: true,
+            ['hover:text-jefferson-main transition-all duration-300']: true,
             ['text-jefferson-light']: pathname === '/'
           }}>Home</a
+        >
+      </li>
+      <li>/</li>
+      <li>
+        <a
+          href='/posts'
+          class:list={{
+            ['hover:text-jefferson-main transition-all duration-300']: true,
+            ['text-jefferson-light']: pathname === '/posts'
+          }}>Notes</a
         >
       </li>
     </ul>
